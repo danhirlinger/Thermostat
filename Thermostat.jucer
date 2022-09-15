@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="CGe38B" name="Thermostat" projectType="audioplug" useAppConfig="0"
+              displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="Arefnh" name="Thermostat">
+    <GROUP id="{0F79D8F7-33FF-A5D9-6C85-515534D08D56}" name="Source">
+      <FILE id="iPFie1" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Cq5KK7" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="XVVJFu" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="Lsiw8J" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <GROUP id="{733CA831-7C6C-47D6-BC58-5EE14F1449B3}" name="Digital Filter DSP">
+        <FILE id="K5A3WZ" name="Bessel.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/Bessel.cpp"/>
+        <FILE id="QCgCkg" name="Bessel.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel.h"/>
+        <FILE id="DXruaq" name="Bessel1st.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel1st.h"/>
+        <FILE id="r7hYZd" name="Bessel2nd.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel2nd.h"/>
+        <FILE id="yJ1dAQ" name="Butterworth.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/Butterworth.cpp"/>
+        <FILE id="tLsxqz" name="Butterworth.h" compile="0" resource="0" file="Source/Digital Filter DSP/Butterworth.h"/>
+        <FILE id="w2H6H8" name="Butterworth1st.h" compile="0" resource="0"
+              file="Source/Digital Filter DSP/Butterworth1st.h"/>
+        <FILE id="N3au5C" name="Butterworth2nd.h" compile="0" resource="0"
+              file="Source/Digital Filter DSP/Butterworth2nd.h"/>
+        <FILE id="qQa8BU" name="Butterworth3rd.h" compile="0" resource="0"
+              file="Source/Digital Filter DSP/Butterworth3rd.h"/>
+        <FILE id="XISTNz" name="Butterworth4th.h" compile="0" resource="0"
+              file="Source/Digital Filter DSP/Butterworth4th.h"/>
+        <FILE id="sHKnno" name="EQ.h" compile="0" resource="0" file="Source/Digital Filter DSP/EQ.h"/>
+        <FILE id="VvboQy" name="EQBoard.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/EQBoard.cpp"/>
+        <FILE id="jEnvSN" name="EQBoard.h" compile="0" resource="0" file="Source/Digital Filter DSP/EQBoard.h"/>
+        <FILE id="bGEWqK" name="EQStack.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/EQStack.cpp"/>
+        <FILE id="mR5gNI" name="EQStack.h" compile="0" resource="0" file="Source/Digital Filter DSP/EQStack.h"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{699802E0-254E-8F4F-5A45-ECB993722EA1}" name="Components">
+      <FILE id="JEIgTE" name="SpectrumAnalyser.h" compile="0" resource="0"
+            file="Source/Components/SpectrumAnalyser.h"/>
+      <FILE id="AzF1BP" name="ThermoItemLabel.h" compile="0" resource="0"
+            file="Source/Components/ThermoItemLabel.h"/>
+      <FILE id="wE8fTZ" name="ThermoComboBox.h" compile="0" resource="0"
+            file="Source/Components/ThermoComboBox.h"/>
+      <FILE id="bsLpIx" name="ThermoLabel.h" compile="0" resource="0" file="Source/Components/ThermoLabel.h"/>
+      <FILE id="dxEmRW" name="ThermoButton.h" compile="0" resource="0" file="Source/Components/ThermoButton.h"/>
+      <FILE id="qPrBhH" name="ThermoDial.h" compile="0" resource="0" file="Source/Components/ThermoDial.h"/>
+      <FILE id="RlqYEt" name="EQStack_Component.cpp" compile="1" resource="0"
+            file="Source/Components/EQStack_Component.cpp"/>
+      <FILE id="FitvJz" name="EQStack_Component.h" compile="0" resource="0"
+            file="Source/Components/EQStack_Component.h"/>
+      <FILE id="f5deLF" name="ApplianceLnF.h" compile="0" resource="0" file="Source/Components/ApplianceLnF.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Thermostat"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Thermostat"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
