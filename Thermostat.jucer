@@ -12,20 +12,22 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="Lsiw8J" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
       <GROUP id="{733CA831-7C6C-47D6-BC58-5EE14F1449B3}" name="Digital Filter DSP">
+        <GROUP id="{59025782-DBFB-3AD8-0BA3-F23B659FCA67}" name="Butterworth">
+          <FILE id="yJ1dAQ" name="Butterworth.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/Butterworth.cpp"/>
+          <FILE id="tLsxqz" name="Butterworth.h" compile="0" resource="0" file="Source/Digital Filter DSP/Butterworth.h"/>
+          <FILE id="w2H6H8" name="Butterworth1st.h" compile="0" resource="0"
+                file="Source/Digital Filter DSP/Butterworth1st.h"/>
+          <FILE id="N3au5C" name="Butterworth2nd.h" compile="0" resource="0"
+                file="Source/Digital Filter DSP/Butterworth2nd.h"/>
+          <FILE id="qQa8BU" name="Butterworth3rd.h" compile="0" resource="0"
+                file="Source/Digital Filter DSP/Butterworth3rd.h"/>
+          <FILE id="XISTNz" name="Butterworth4th.h" compile="0" resource="0"
+                file="Source/Digital Filter DSP/Butterworth4th.h"/>
+        </GROUP>
         <FILE id="K5A3WZ" name="Bessel.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/Bessel.cpp"/>
         <FILE id="QCgCkg" name="Bessel.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel.h"/>
         <FILE id="DXruaq" name="Bessel1st.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel1st.h"/>
         <FILE id="r7hYZd" name="Bessel2nd.h" compile="0" resource="0" file="Source/Digital Filter DSP/Bessel2nd.h"/>
-        <FILE id="yJ1dAQ" name="Butterworth.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/Butterworth.cpp"/>
-        <FILE id="tLsxqz" name="Butterworth.h" compile="0" resource="0" file="Source/Digital Filter DSP/Butterworth.h"/>
-        <FILE id="w2H6H8" name="Butterworth1st.h" compile="0" resource="0"
-              file="Source/Digital Filter DSP/Butterworth1st.h"/>
-        <FILE id="N3au5C" name="Butterworth2nd.h" compile="0" resource="0"
-              file="Source/Digital Filter DSP/Butterworth2nd.h"/>
-        <FILE id="qQa8BU" name="Butterworth3rd.h" compile="0" resource="0"
-              file="Source/Digital Filter DSP/Butterworth3rd.h"/>
-        <FILE id="XISTNz" name="Butterworth4th.h" compile="0" resource="0"
-              file="Source/Digital Filter DSP/Butterworth4th.h"/>
         <FILE id="sHKnno" name="EQ.h" compile="0" resource="0" file="Source/Digital Filter DSP/EQ.h"/>
         <FILE id="VvboQy" name="EQBoard.cpp" compile="1" resource="0" file="Source/Digital Filter DSP/EQBoard.cpp"/>
         <FILE id="jEnvSN" name="EQBoard.h" compile="0" resource="0" file="Source/Digital Filter DSP/EQBoard.h"/>

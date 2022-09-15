@@ -10,7 +10,7 @@
  LPF, HPF do not have a Q factor
  LPF, HPF can have amplitude change,  which moves shelf up/down
  BPF, BSF have Q option
- BPF, BSF have amp option??????
+ BPF, BSF also have amp option
  
 */
 
@@ -20,6 +20,7 @@
 #include "Butterworth1st.h"
 #include "Butterworth2nd.h"
 #include "Butterworth3rd.h"
+#include "Butterworth4th.h"
 
 class Butterworth : public EQ
 {
@@ -36,6 +37,7 @@ public:
     Butterworth1st bw1;
     Butterworth2nd bw2;
     Butterworth3rd bw3;
+    Butterworth4th bw4;
     
 private:
     

@@ -42,6 +42,8 @@ void Butterworth::process(juce::dsp::AudioBlock<float> samples){
             case 3:
                 bw3.processBlock(samples);
                 break;
+            case 4:
+                bw4.processBlock(samples);
             default:
                 break;
         }

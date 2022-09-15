@@ -25,6 +25,7 @@ private:
     double gma;
     double D;
     double Fs = 48000.0;
+    double Ts = 1./Fs;
     double freq = 1000.0;
     double ampdB = 0.0;
     
@@ -46,6 +47,7 @@ public:
     
     void setFs(double newFs){
         Fs = newFs;
+        Ts = 1./Fs;
         updateCoefficients();
     };
     void setFreq(double newFreq){
@@ -97,18 +99,18 @@ public:
     
 private:
     void updateCoefficients(){
-        gma = tan((M_PI*freq)/Fs);
-        D = 1.0 + gma;
+        gma = tan((M_PI*freq)*Ts);
+        D = 1.0/(1.0 + gma);
         
         if (ft == FilterType::LPF){
-            b[0] = gma/D;
-            b[1] = gma/D;
-            a[1] = (gma-1.0)/D;
+            b[0] = gma * 1.0 * D;
+            b[1] = gma * 1.0 * D;
+            a[1] = (gma-1.0) * D;
         }
         if (ft == FilterType::HPF){
-            b[0] = 1.0/D;
-            b[1] = -1.0/D;
-            a[1] = (gma-1.0)/D;
+            b[0] = 1.0 * D;
+            b[1] = -1.0 * D;
+            a[1] = (gma-1.0) * D;
         }
     };
 };

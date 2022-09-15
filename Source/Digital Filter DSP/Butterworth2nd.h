@@ -28,6 +28,7 @@ private:
     double D;
     double BW;
     double Fs = 48000.0;
+    double Ts = 1./Fs;
     double freq = 1000.f;
     double ampdB = 0.0;
     double Q = 1.0;
@@ -50,6 +51,7 @@ public:
     };
     void setFs(double newFs){
         Fs = newFs;
+        Ts = 1.f/Fs;
         updateCoefficients();
     }
     void setFreq(double newFreq){
@@ -60,11 +62,20 @@ public:
         ampdB = pow(10.0,newAmpdB/20.0);
         updateCoefficients();
     }
+    void setQ(double newQ){
+        Q = newQ;
+        BW = Q/freq;
+        updateCoefficients();
+    }
     void setFilterType(int newFT){
         if (newFT == 1)
             ft = FilterType::LPF;
         if (newFT == 2)
             ft = FilterType::HPF;
+        if (newFT == 3)
+            ft = FilterType::BPF;
+        if (newFT == 4)
+            ft = FilterType::BSF;
         updateCoefficients();
     };
     
@@ -99,44 +110,43 @@ public:
     
 private:
     void updateCoefficients(){
-        gma = tan((M_PI*freq)/Fs);
-        BW = Q/freq;
+        gma = tan((M_PI*freq) * Ts);
         
         if (ft == FilterType::LPF){
-            D = pow(gma,2.) + sqrt(2.)*gma + 1.;
+            D = 1. / (gma*gma + sqrt(2.)*gma + 1.);
             
-            b[0] = pow(gma,2.)/D;
-            b[1] = (2.*pow(gma,2.))/D;
+            b[0] = gma*gma * D;
+            b[1] = 2.* gma*gma * D;
             b[2] = b[0];
-            a[1] = (2.*(pow(gma,2.) - 1.))/D;
-            a[2] = (pow(gma,2.) - sqrt(2.)*gma + 1.)/D;
+            a[1] = (2.*(gma*gma - 1.)) * D;
+            a[2] = (gma*gma - sqrt(2.)*gma + 1.) * D;
         }
         if (ft == FilterType::HPF){
-            D = pow(gma,2) + sqrt(2)*gma + 1;
+            D = 1. / (pow(gma,2) + sqrt(2)*gma + 1);
             
-            b[0] = 1/D;
-            b[1] = -2/D;
-            b[2] = 1/D;
-            a[1] = (2*(pow(gma,2) - 1))/D;
-            a[2] = (pow(gma,2) - sqrt(2)*gma + 1)/D;
+            b[0] = D;
+            b[1] = -2 * D;
+            b[2] = D;
+            a[1] = (2*(gma*gma - 1))/D;
+            a[2] = (gma*gma - sqrt(2)*gma + 1)/D;
         }
         if (ft == FilterType::BPF){
-            D = (1+pow(gma,2))*freq + gma*BW;
+            D = 1. / ((1+gma*gma)*freq + gma*BW);
             
-            b[0] = (BW*gma)/D;
+            b[0] = BW*gma * D;
             b[1] = 0;
-            b[2] = (-1*BW*gma)/D;
-            a[1] = (2*freq*(pow(gma,2) - 1))/D;
-            a[2] = ((1+pow(gma,2))*freq - gma*BW)/D;
+            b[2] = -1*BW*gma * D;
+            a[1] = 2*freq*(gma*gma - 1) * D;
+            a[2] = ((1+gma*gma)*freq - gma*BW) * D;
         }
         if (ft == FilterType::BSF){
-            D = (1+pow(gma,2))*freq + gma*BW;
+            D = 1. / ((1+gma*gma)*freq + gma*BW);
             
-            b[0] = (freq*(pow(gma,2)+1))/D;
-            b[1] = (2*freq*(pow(gma,2)-1))/D;
-            b[2] = (freq*(pow(gma,2)+1))/D;
-            a[1] = (2*freq*(pow(gma,2)-1))/D;
-            a[2] = ((1+pow(gma,2))*freq - gma*BW)/D;
+            b[0] = freq*(gma*gma+1) * D;
+            b[1] = 2*freq*(gma*gma-1) * D;
+            b[2] = freq*(gma*gma+1) * D;
+            a[1] = 2*freq*(gma*gma-1) * D;
+            a[2] = ((1+gma*gma)*freq - gma*BW) * D;
         }
     }
 };

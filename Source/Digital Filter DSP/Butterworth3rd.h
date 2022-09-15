@@ -22,7 +22,7 @@ public:
     ~Butterworth3rd() = default;
     
 private:
-    enum FilterType {LPF, HPF, BPF, BSF};
+    enum FilterType {LPF, HPF};
     
     double gma;
     double D;
