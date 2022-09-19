@@ -17,33 +17,33 @@
 #pragma once
 #include <JuceHeader.h>
 #include "EQ.h"
-#include "Butterworth1st.h"
-#include "Butterworth2nd.h"
-#include "Butterworth3rd.h"
-#include "Butterworth4th.h"
 
 class Butterworth : public EQ
 {
     
 public:
-
     Butterworth();
     ~Butterworth() {};
     
-    void prepare(juce::dsp::ProcessSpec spec) override;
-    
     void process(juce::dsp::AudioBlock<float> samples) override;
-    
-    Butterworth1st bw1;
-    Butterworth2nd bw2;
-    Butterworth3rd bw3;
-    Butterworth4th bw4;
     
 private:
     
-    double Fs = 48000;
+    double gma;
+    double D;
+    double BW;
     
-    void updateParameters();
+    double processSample(double x, int c, int o);
+    
+    double a[5] = {1.0,0.0,0.0,0.0,0.0};
+    double b[5] = {0.0,0.0,0.0,0.0,0.0};
+    
+    //       [c][d]
+    double xd[2][4] = {0.0};
+    double yd[2][4] = {0.0};
+
+    
+    void updateCoefficients() override;
 };
 
 
