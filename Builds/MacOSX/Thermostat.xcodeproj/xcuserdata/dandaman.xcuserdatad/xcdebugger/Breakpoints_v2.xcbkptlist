@@ -14,8 +14,8 @@
             filePath = "../../Source/Digital Filter DSP/EQ.h"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -391,22 +391,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8353C6F7-DE93-483F-BCA1-A5598F7E1C84"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "Butterworth::processSample(x, c, o)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "58F7F5CD-34B8-4922-A559-3BA0CEF1AE4B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -417,6 +401,497 @@
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "Butterworth::processSample(x, c, o)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29256BAF-7F35-49B8-B58E-C67AEC8AC96D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BB7CE19-3718-423F-BF9B-C4EB6C847F47"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D4F584F-B22C-4651-8F87-66929BF60478"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D4F584F-B22C-4651-8F87-66929BF60478 - 5c40bcf1aef46b91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "5D4F584F-B22C-4651-8F87-66929BF60478 - 5c40bcf1aef46b91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00068B3F-961E-423B-B23F-916E2751BF67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "00068B3F-961E-423B-B23F-916E2751BF67 - 5c40bcf1aef46b15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "00068B3F-961E-423B-B23F-916E2751BF67 - 5c40bcf1aef46b15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "258">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78016B81-B96A-40DC-915B-77734630382F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78016B81-B96A-40DC-915B-77734630382F - 5c40bcf1aef46899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "370">
+               </Location>
+               <Location
+                  uuid = "78016B81-B96A-40DC-915B-77734630382F - 5c40bcf1aef46899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "78016B81-B96A-40DC-915B-77734630382F - 5c40bcf1aef46899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "358">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F3E86C2-F275-4F77-AAA7-E8BAA04BF0AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F3E86C2-F275-4F77-AAA7-E8BAA04BF0AE - 5c40bcf1aef4681d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "491">
+               </Location>
+               <Location
+                  uuid = "4F3E86C2-F275-4F77-AAA7-E8BAA04BF0AE - 5c40bcf1aef4681d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "485">
+               </Location>
+               <Location
+                  uuid = "4F3E86C2-F275-4F77-AAA7-E8BAA04BF0AE - 5c40bcf1aef4681d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "479">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23473DC4-E167-427A-AC53-EFE05D86CB1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23473DC4-E167-427A-AC53-EFE05D86CB1C - 5c40bcf1aef469a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  uuid = "23473DC4-E167-427A-AC53-EFE05D86CB1C - 5c40bcf1aef469a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "606">
+               </Location>
+               <Location
+                  uuid = "23473DC4-E167-427A-AC53-EFE05D86CB1C - 5c40bcf1aef469a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "600">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4774008-F399-42F9-BE01-2E0D66940EE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F4774008-F399-42F9-BE01-2E0D66940EE5 - 5c40bcf1aef46925"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "F4774008-F399-42F9-BE01-2E0D66940EE5 - 5c40bcf1aef46925"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "682">
+               </Location>
+               <Location
+                  uuid = "F4774008-F399-42F9-BE01-2E0D66940EE5 - 5c40bcf1aef46925"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "676">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CED69FE-237E-425C-B814-2260649B7605"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CED69FE-237E-425C-B814-2260649B7605 - 5c40bcf1aef466a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "764">
+               </Location>
+               <Location
+                  uuid = "6CED69FE-237E-425C-B814-2260649B7605 - 5c40bcf1aef466a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "758">
+               </Location>
+               <Location
+                  uuid = "6CED69FE-237E-425C-B814-2260649B7605 - 5c40bcf1aef466a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EQBoard::updateParameters()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/EQBoard.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89DC5B96-17E4-43D5-8396-768C95BF443B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCE9EBAD-D016-402E-BC3C-BBE3820FE49C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1BCCA2B-CA74-46DB-999B-235D33304493"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

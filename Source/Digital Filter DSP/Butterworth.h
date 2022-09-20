@@ -28,22 +28,11 @@ public:
     void process(juce::dsp::AudioBlock<float> samples) override;
     
 private:
-    
     double gma;
     double D;
     double BW;
     
     double processSample(double x, int c, int o);
     
-    double a[5] = {1.0,0.0,0.0,0.0,0.0};
-    double b[5] = {0.0,0.0,0.0,0.0,0.0};
-    
-    //       [c][d]
-    double xd[2][4] = {0.0};
-    double yd[2][4] = {0.0};
-
-    
     void updateCoefficients() override;
 };
-
-

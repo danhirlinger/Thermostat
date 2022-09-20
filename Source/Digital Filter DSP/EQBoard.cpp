@@ -100,7 +100,7 @@ void EQBoard::updateParameters(){
         setFilterDesign(0, selection);
     
     
-    if (abs(eq[0]->freq - *params.freq1) > 0.001f){
+    if (eq[0]->freq != *params.freq1){
         eq[0]->freq = *params.freq1;
         updateFlag = true;
     };
@@ -108,7 +108,7 @@ void EQBoard::updateParameters(){
         eq[0]->q = *params.q1;
         updateFlag = true;
     };
-    if (abs(eq[0]->ampdB - *params.ampdB1) > 0.001f){
+    if (eq[0]->ampdB != *params.ampdB1){
         eq[0]->ampdB = *params.ampdB1;
         updateFlag = true;
     }

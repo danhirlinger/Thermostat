@@ -26,7 +26,7 @@ void Butterworth::process(juce::dsp::AudioBlock<float> samples){
             {
                 double x = (double)samples.getSample(channel, n);
                 x = processSample(x,channel,filterOrder);
-                samples.setSample(channel, n, (float)x);
+                samples.setSample(channel, n, (float)x * ampLinear);
             }
         }
     }
@@ -36,26 +36,25 @@ double Butterworth::processSample(double x, int c, int o){
     double y;
     
     double bVal = b[0]*x;
-    double aVal = 0;
+    double aVal = 0.;
     
     for (int n = 0 ; n < o ; n++){
-        bVal = bVal + b[n+1]*xd[c][n];
-        aVal = aVal + a[n+1]*yd[c][n];
+        bVal = bVal + b[n+1]*xd[n][c];
+        aVal = aVal + a[n+1]*yd[n][c];
     }
     
     y = bVal - aVal;
     
     for (int n = o-1 ; n > 0 ; n = n-1){
-        xd[c][n] = xd[c][n-1];
-        yd[c][n] = yd[c][n-1];
+        xd[n][c] = xd[n-1][c];
+        yd[n][c] = yd[n-1][c];
     }
     
-    xd[c][0] = x;
-    yd[c][0] = y;
+    xd[0][c] = x;
+    yd[0][c] = y;
     
-    return y*ampdB;
+    return y;
 }
-
 
 void Butterworth::updateCoefficients(){
     
@@ -127,6 +126,7 @@ void Butterworth::updateCoefficients(){
                 default:
                     break;
             }
+            break;
         case 3:
             D = pow(gma,3.) + 2.*pow(gma,2.) + 2.*gma + 1.;
             switch (filterType) {
@@ -153,6 +153,7 @@ void Butterworth::updateCoefficients(){
                 default:
                     break;
             }
+            break;
         case 4:
             D = pow(gma,3.) + 2.*pow(gma,2.) + 2.*gma + 1.;
 
@@ -186,6 +187,7 @@ void Butterworth::updateCoefficients(){
                 default:
                     break;
             }
+            break;
         default:
             break;
     }
