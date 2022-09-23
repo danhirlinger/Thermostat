@@ -14,8 +14,8 @@
             filePath = "../../Source/Digital Filter DSP/EQ.h"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "EQBoard::setFilterDesign(eqIndex, comboBoxIndex)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -494,8 +494,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -542,8 +542,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -605,8 +605,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -668,8 +668,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -731,8 +731,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -794,8 +794,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -857,8 +857,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -873,8 +873,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -889,9 +889,201 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "EQBoard::updateParameters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63B005C1-FABC-4D7F-B666-BFEB44BD425D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth4th.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D579ED5-16B7-4596-9C84-113DAEE7315C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth4th.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC1BC3C1-C61D-447E-BD44-D173A3309039"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth4th.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C2F00E0-C9A4-4A46-8C67-F5F4948D31A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C2F00E0-C9A4-4A46-8C67-F5F4948D31A0 - c77cd70c8cb12266"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "2297">
+               </Location>
+               <Location
+                  uuid = "6C2F00E0-C9A4-4A46-8C67-F5F4948D31A0 - c77cd70c8cb12266"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "2287">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45C4F645-51D0-434E-9943-50BBF539475E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45C4F645-51D0-434E-9943-50BBF539475E - c77cd70c8cb13e61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "3512">
+               </Location>
+               <Location
+                  uuid = "45C4F645-51D0-434E-9943-50BBF539475E - c77cd70c8cb13e61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "3517">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA0B9BEB-8B68-40CA-8C69-A1DE930DE089"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47C027F6-D69A-4E07-8D6D-B6DEF1829BCA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D581BAA-8685-4B8E-9F39-BB2B85DE717D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

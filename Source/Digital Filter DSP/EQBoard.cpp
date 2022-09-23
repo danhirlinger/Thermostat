@@ -89,7 +89,6 @@ void EQBoard::process(juce::dsp::AudioBlock<float> samples, const int numSamples
     {
         eq[i]->process(samples);
     }
-    
 }
 
 void EQBoard::updateParameters(){
@@ -98,7 +97,6 @@ void EQBoard::updateParameters(){
     int selection = changeInFilterDesign(0);
     if (selection > -1)
         setFilterDesign(0, selection);
-    
     
     if (eq[0]->freq != *params.freq1){
         eq[0]->freq = *params.freq1;
@@ -128,11 +126,6 @@ void EQBoard::updateParameters(){
         eq[0]->filterType = (int)*params.filterType1;
         updateFlag = true;
     }
-//    if (eq[0]->filterDesign != (int)*params.filterDesign1) {
-//        eq[0]->filterDesign = (int)*params.filterDesign1;
-//        setFilterDesign(0, eq[0]->filterDesign);
-//        updateFlag = true;
-//    }
     
     if (updateFlag)
         eq[0]->updateParameters();

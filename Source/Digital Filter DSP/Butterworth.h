@@ -28,6 +28,8 @@ public:
     void process(juce::dsp::AudioBlock<float> samples) override;
     
 private:
+    double alph;
+    double bta;
     double gma;
     double D;
     double BW;

@@ -26,7 +26,7 @@ void Butterworth::process(juce::dsp::AudioBlock<float> samples){
             {
                 double x = (double)samples.getSample(channel, n);
                 x = processSample(x,channel,filterOrder);
-                samples.setSample(channel, n, (float)x * ampLinear);
+                samples.setSample(channel, n, (float)x);
             }
         }
     }
@@ -36,7 +36,7 @@ double Butterworth::processSample(double x, int c, int o){
     double y;
     
     double bVal = b[0]*x;
-    double aVal = 0.;
+    double aVal = 0.0;
     
     for (int n = 0 ; n < o ; n++){
         bVal = bVal + b[n+1]*xd[n][c];
@@ -83,27 +83,27 @@ void Butterworth::updateCoefficients(){
                     break;
             }
             break;
-        case 2:
+        case 2: // 2nd order
             switch (filterType) {
                 case 0:
                     break;
                 case 1: // LPF
-                    D = 1. / (gma*gma + sqrt(2.)*gma + 1.);
+                    D = 1. / (gma*gma + M_SQRT2*gma + 1.);
                     
                     b[0] = gma*gma * D;
                     b[1] = 2.* gma*gma * D;
                     b[2] = b[0];
                     a[1] = (2.*(gma*gma - 1.)) * D;
-                    a[2] = (gma*gma - sqrt(2.)*gma + 1.) * D;
+                    a[2] = (gma*gma - M_SQRT2*gma + 1.) * D;
                     break;
                 case 2: // HPF
-                    D = 1. / (pow(gma,2) + sqrt(2)*gma + 1);
+                    D = 1. / ( gma*gma + M_SQRT2*gma + 1);
                     
                     b[0] = D;
                     b[1] = -2 * D;
                     b[2] = D;
-                    a[1] = (2*(gma*gma - 1))/D;
-                    a[2] = (gma*gma - sqrt(2)*gma + 1)/D;
+                    a[1] = (2*(gma*gma - 1)) * D;
+                    a[2] = (gma*gma - M_SQRT2*gma + 1) * D;
                     break;
                 case 3: // BPF
                     D = 1. / ((1+gma*gma)*freq + gma*BW);
@@ -127,62 +127,86 @@ void Butterworth::updateCoefficients(){
                     break;
             }
             break;
-        case 3:
-            D = pow(gma,3.) + 2.*pow(gma,2.) + 2.*gma + 1.;
+        case 3: // 3rd order
+            D = 1. / (gma*gma*gma + 2.*gma*gma + 2.*gma + 1.);
             switch (filterType) {
                 case 0:
                     break;
                 case 1: // LPF
-                    b[0] = pow(gma,3.)/D;
-                    b[1] = (3.*pow(gma,3.))/D;
+                    b[0] = gma*gma*gma * D;
+                    b[1] = (3.*gma*gma*gma) * D;
                     b[2] = 3.*b[0];
                     b[3] = b[0];
-                    a[1] = (3.*(pow(gma,3.) + 2.*pow(gma,2.) - (2.*gma) - 3.))/D;
-                    a[2] = (3.*(pow(gma,3.) - 2.*pow(gma,2.) - (2.*gma) + 3.))/D;
-                    a[3] = (pow(gma,3.) - 2.*pow(gma,2.) + (2.*gma) - 1.)/D;
+                    a[1] = (3.*gma*gma*gma + 2.*gma*gma - 2.*gma - 3.) * D;
+                    a[2] = (3.*gma*gma*gma - 2.*gma*gma - (2.*gma) + 3.) * D;
+                    a[3] = (gma*gma*gma - 2.*gma*gma + (2.*gma) - 1.) * D;
                     break;
                 case 2: // HPF
-                    b[0] = 1/D;
-                    b[1] = -3/D;
-                    b[2] = 3/D;
-                    b[3] = -1/D;
-                    a[1] = ((3.*pow(gma,3.)) + (2.*pow(gma,2.)) - (2.*gma) - 3.)/D;
-                    a[2] = ((3.*pow(gma,3.) - 2.*pow(gma,2.) - 2.*gma + 3.))/D;
-                    a[3] = (pow(gma,3.) - 2.*pow(gma,2.) + 2.*gma - 1.)/D;
+                    b[0] = D;
+                    b[1] = -3 * D;
+                    b[2] = 3 * D;
+                    b[3] = -1 * D;
+                    a[1] = (3.*gma*gma*gma + (2.*gma*gma) - (2.*gma) - 3.) * D;
+                    a[2] = (3.*gma*gma*gma - 2.*gma*gma - 2.*gma + 3.) * D;
+                    a[3] = (gma*gma*gma - 2.*gma*gma + 2.*gma - 1.) * D;
                     break;
                 default:
                     break;
             }
             break;
-        case 4:
-            D = pow(gma,3.) + 2.*pow(gma,2.) + 2.*gma + 1.;
-
+        case 4: // 4th order
+            alph = -2*(cos((5.*M_PI)/8.) + cos((7.*M_PI)/8));
+            bta = 2*(1+2*(cos((5.*M_PI)/8)*cos((7*M_PI)/8)));
             switch (filterType) {
                 case 0:
                     break;
                 case 1: // LPF
-                    b[0] = pow(gma,3.)/D;
-                    b[1] = (3.*pow(gma,3.))/D;
-                    b[2] = 3.*b[0];
-                    b[3] = b[0];
+                    D = 1. / (gma*gma*gma*gma + alph*gma*gma*gma + bta*gma*gma + alph*gma + 1);
+                    b[0] = gma*gma*gma*gma*D;
+                    b[1] = 4*b[0];
+                    b[2] = 6*b[0];
+                    b[3] = b[1];
                     b[4] = b[0];
-                    a[1] = (3.*(pow(gma,3.) + 2.*pow(gma,2.) - (2.*gma) - 3.))/D;
-                    a[2] = (3.*(pow(gma,3.) - 2.*pow(gma,2.) - (2.*gma) + 3.))/D;
-                    a[3] = (pow(gma,3.) - 2.*pow(gma,2.) + (2.*gma) - 1.)/D;
+                    a[1] = 2*(2*gma*gma*gma*gma + alph*gma*gma*gma - alph*gma - 2) * D;
+                    a[2] = 2*(3*gma*gma*gma*gma - bta*gma*gma + 3) * D;
+                    a[3] = 2*(2*gma*gma*gma*gma - alph*gma*gma*gma + alph*gma - 2) * D;
+                    a[4] = (gma*gma*gma*gma - alph*gma*gma*gma + bta*gma*gma - alph*gma + 1) * D;
                     break;
                 case 2: // HPF
-                    b[0] = 1/D;
-                    b[1] = -3/D;
-                    b[2] = 3/D;
-                    b[3] = -1/D;
-                    a[1] = ((3.*pow(gma,3.)) + (2.*pow(gma,2.)) - (2.*gma) - 3.)/D;
-                    a[2] = ((3.*pow(gma,3.) - 2.*pow(gma,2.) - 2.*gma + 3.))/D;
-                    a[3] = (pow(gma,3.) - 2.*pow(gma,2.) + 2.*gma - 1.)/D;
+                    D = 1. / (gma*gma*gma*gma + alph*gma*gma*gma + bta*gma*gma + alph*gma + 1);
+                    b[0] = D;
+                    b[1] = -4 * D;
+                    b[2] = 6 * D;
+                    b[3] = b[1];
+                    b[4] = D;
+                    a[1] = 2*(2*gma*gma*gma*gma + alph*gma*gma*gma - alph*gma - 2) * D;
+                    a[2] = 2*(3*gma*gma*gma*gma - bta*gma*gma + 3) * D;
+                    a[3] = 2*(2*gma*gma*gma*gma - alph*gma*gma*gma + alph*gma - 2) * D;
+                    a[4] = (gma*gma*gma*gma - alph*gma*gma*gma + bta*gma*gma - alph*gma + 1) * D;
+                    break;
                 case 3: // BPF
-                    
+                    D = 1. / (freq*freq*(gma*gma*gma*gma + 2*gma*gma + 1) + M_SQRT2*BW*freq*gma*(gma*gma + 1) + BW*BW*gma*gma);
+                    b[0] = (BW*BW*gma*gma) * D;
+                    b[1] = 0;
+                    b[2] = -2 * b[0];
+                    b[3] = 0;
+                    b[4] = b[0];
+                    a[1] = 2 * (2*freq*freq*(gma*gma*gma*gma - 1) + M_SQRT2*BW*freq*gma*(gma*gma - 1)) * D;
+                    a[2] = 2 * (3*freq*freq*(gma*gma*gma*gma + 1) - gma*gma*(2*freq*freq + BW*BW)) * D;
+                    a[3] = 2 * (2*freq*freq*(gma*gma*gma*gma - 1) + M_SQRT2*BW*freq*gma*(1 - gma*gma)) * D;
+                    a[4] = (freq*freq*(gma*gma*gma*gma + 2*gma*gma + 1) - M_SQRT2*BW*freq*gma*(gma*gma + 1) + BW*BW*gma*gma) * D;
                     break;
                 case 4: // BSF
-                    
+                    D = 1. / (freq*freq*(gma*gma*gma*gma + 2*gma*gma + 1) + M_SQRT2*BW*freq*gma*(gma*gma + 1) + BW*BW*gma*gma);
+                    b[0] = (freq*freq*(gma*gma*gma*gma + 2*gma*gma + 1)) * D;
+                    b[1] = (4*freq*freq*(gma*gma*gma*gma - 1)) * D;
+                    b[2] = (2*freq*freq*(3*gma*gma*gma*gma - 2*gma*gma + 3)) * D;
+                    b[3] = b[1];
+                    b[4] = b[0];
+                    a[1] = 2 * (2*freq*freq*(gma*gma*gma*gma - 1) + M_SQRT2*BW*freq*gma*(gma*gma - 1)) * D;
+                    a[2] = 2 * (3*freq*freq*(gma*gma*gma*gma + 1) - gma*gma*(2*freq*freq + BW*BW)) * D;
+                    a[3] = 2 * (2*freq*freq*(gma*gma*gma*gma - 1) + M_SQRT2*BW*freq*gma*(1 - gma*gma)) * D;
+                    a[4] = (freq*freq*(gma*gma*gma*gma + 2*gma*gma + 1) - M_SQRT2*BW*freq*gma*(gma*gma + 1) + BW*BW*gma*gma) * D;
                     break;
                 default:
                     break;
