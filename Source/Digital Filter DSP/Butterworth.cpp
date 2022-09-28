@@ -10,13 +10,24 @@
 
 #include "Butterworth.h"
 
-Butterworth::Butterworth(){
+Butterworth::Butterworth(AudioProcessorValueTreeState &p){
     
+    params.freq =          p.getRawParameterValue("FREQ1");
+    params.q =             p.getRawParameterValue("Q1");
+    params.ampdB =         p.getRawParameterValue("AMP1");
+    params.analogQOn =     p.getRawParameterValue("ANALOG_Q_ON1");
+    params.nonLinearOn =   p.getRawParameterValue("NONLINEAR_EQ_ON1");
+    params.filterDesign =  p.getRawParameterValue("EQ_DESIGN1");
+    params.filterOrder =   p.getRawParameterValue("EQ_ORDER1");
+    params.filterType =    p.getRawParameterValue("EQ_TYPE1");
+    
+    updateParamsVT();
     updateParameters();
 }
 
 void Butterworth::process(juce::dsp::AudioBlock<float> samples){
     
+    updateParamsVT();
     if (filterType != 0){
         int numSamples = (int) samples.getNumSamples();
         int numChannels = (int) samples.getNumChannels();
@@ -54,6 +65,44 @@ double Butterworth::processSample(double x, int c, int o){
     yd[0][c] = y;
     
     return y;
+}
+
+void Butterworth::updateParamsVT(){
+    
+    bool updateFlag = false;
+    
+    if (freq != *params.freq){
+        freq = *params.freq;
+        updateFlag = true;
+    };
+    if (abs(q - *params.q) > 0.001f){
+        q = *params.q;
+        updateFlag = true;
+    };
+    if (ampdB != *params.ampdB){
+        ampdB = *params.ampdB;
+        updateFlag = true;
+    }
+    if (isAnalogQOn != (*params.analogQOn > 0.5)) {
+        isAnalogQOn = (*params.analogQOn > 0.5);
+        updateFlag = true;
+    }
+    if (isNonLinearOn != (*params.nonLinearOn > 0.5)) {
+        isNonLinearOn = (*params.nonLinearOn > 0.5);
+        updateFlag = true;
+    }
+    if (filterOrder != (int)*params.filterOrder) {
+        filterOrder = (int)*params.filterOrder;
+        updateFlag = true;
+    }
+    if (filterType != (int)*params.filterType) {
+        filterType = (int)*params.filterType;
+        updateFlag = true;
+    }
+    
+    if (updateFlag)
+        updateParameters();
+    
 }
 
 void Butterworth::updateCoefficients(){

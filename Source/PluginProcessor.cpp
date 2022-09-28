@@ -20,7 +20,8 @@ ThermostatAudioProcessor::ThermostatAudioProcessor()
                        .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
                      #endif
                        ),apvts(*this, nullptr, "Params", createParams()),
-eq(apvts)
+eq(apvts),
+bw(apvts)
 #endif
 {
 }
@@ -101,6 +102,7 @@ void ThermostatAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     spec.numChannels = (juce::uint32) juce::jmax(getTotalNumInputChannels(),getTotalNumOutputChannels());
 
     eq.prepare(spec);
+    bw.prepare(spec);
     
 }
 
@@ -149,7 +151,8 @@ void ThermostatAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
 
     dsp::AudioBlock<float> block(buffer);
     
-    eq.process(block,numSamples);
+//    eq.process(block,numSamples);
+    bw.process(block);
     
     spectrum.process(block); // not the buzzing problem
     

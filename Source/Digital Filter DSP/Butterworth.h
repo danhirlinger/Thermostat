@@ -22,12 +22,24 @@ class Butterworth : public EQ
 {
     
 public:
-    Butterworth();
+    Butterworth(AudioProcessorValueTreeState &p);
     ~Butterworth() {};
     
     void process(juce::dsp::AudioBlock<float> samples) override;
     
 private:
+    
+    struct {
+        std::atomic<float>* freq;
+        std::atomic<float>* q;
+        std::atomic<float>* ampdB;
+        std::atomic<float>* analogQOn;
+        std::atomic<float>* nonLinearOn;
+        std::atomic<float>* filterDesign;
+        std::atomic<float>* filterOrder;
+        std::atomic<float>* filterType;
+    } params;
+    
     double alph;
     double bta;
     double gma;
@@ -37,4 +49,8 @@ private:
     double processSample(double x, int c, int o);
     
     void updateCoefficients() override;
+    
+    void updateParamsVT();
+    
+    
 };

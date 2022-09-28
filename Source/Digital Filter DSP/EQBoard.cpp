@@ -142,7 +142,7 @@ void EQBoard::setFilterDesign(int eqIndex, int comboBoxIndex){
             eq[eqIndex] = new EQ();
             break;
         case 1:
-            eq[eqIndex] = new Butterworth();
+//            eq[eqIndex] = new Butterworth();
             break;
         case 2:
             eq[eqIndex] = new Bessel();

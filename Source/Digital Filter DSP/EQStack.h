@@ -46,7 +46,7 @@ public:
 private:
     
     
-    Butterworth filterDesign;
+//    Butterworth filterDesign;
     
     EQ eq;
 

@@ -46,8 +46,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "Butterworth::process(samples)"
             landmarkType = "7">
          </BreakpointContent>
@@ -334,8 +334,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "Butterworth::processSample(x, c, o)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +350,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "Butterworth::processSample(x, c, o)"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +366,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "Butterworth::processSample(x, c, o)"
             landmarkType = "7">
          </BreakpointContent>
@@ -382,8 +382,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "Butterworth::processSample(x, c, o)"
             landmarkType = "7">
          </BreakpointContent>
@@ -398,8 +398,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "Butterworth::processSample(x, c, o)"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,8 +414,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
          </BreakpointContent>
@@ -430,8 +430,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
          </BreakpointContent>
@@ -953,8 +953,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
             <Locations>
@@ -1001,8 +1001,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
             <Locations>
@@ -1049,8 +1049,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1065,10 +1065,42 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47C027F6-D69A-4E07-8D6D-B6DEF1829BCA - c77cd70c8cb13d2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "1250">
+               </Location>
+               <Location
+                  uuid = "47C027F6-D69A-4E07-8D6D-B6DEF1829BCA - c77cd70c8cb13d48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Butterworth::updateCoefficients()"
+                  moduleName = "Thermostat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dandaman/SirFridgeProductions/Thermostat/Source/Digital%20Filter%20DSP/Butterworth.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1250">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1081,8 +1113,8 @@
             filePath = "../../Source/Digital Filter DSP/Butterworth.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "Butterworth::updateCoefficients()"
             landmarkType = "7">
          </BreakpointContent>
