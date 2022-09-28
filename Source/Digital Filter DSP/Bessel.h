@@ -16,17 +16,17 @@ class Bessel : public EQ
 {
 public:
     Bessel();
-    
     ~Bessel() {};
     
-    void prepare(juce::dsp::ProcessSpec spec) override;
-    
     void process(juce::dsp::AudioBlock<float> samples) override;
-    
-//    void setFreq(double newFreq);
-    
+     
 private:
+    double gma;
+    double D;
+    double BW;
     
-    void updateParameters();
+    double processSample(double x, int c, int o);
+    
+    void updateCoefficients() override;
 };
     

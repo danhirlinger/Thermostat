@@ -59,7 +59,7 @@ double Butterworth::processSample(double x, int c, int o){
 void Butterworth::updateCoefficients(){
     
     gma = tan((M_PI*freq)*Ts);
-    BW = q/freq;
+    BW = freq/q;
     
     switch (filterOrder) {
         case 0:
