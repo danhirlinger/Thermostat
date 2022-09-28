@@ -56,6 +56,7 @@
 		97ECC21C97CCFBB843C35F30 /* include_juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = AB15A4E84FEA58A05E415840; };
 		99E89BC40DAD071D463684B1 /* Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 4DE81F295FB01E85D9DA1632; };
 		9FC4FB6A7FA992EDD15D1056 /* VST3 */ = {isa = PBXBuildFile; fileRef = A57E77232350C0DCBC996261; };
+		B4D37C3A7205CAA4C7E5578C /* LinkwitzReilly.cpp */ = {isa = PBXBuildFile; fileRef = 6B88A414B43A1FF1A27D0DB7; };
 		BC457363433DE9B9DAA3A28D /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = 45FE9D5809A8AAECD3CC0940; };
 		BD1BDD1FB581FAFDF92A7983 /* include_juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 1CFD9BFDB40C76AE4C2EEB21; };
 		C0DFE68F075DA7903299ED91 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = D675D7D3E19A9CD78998FE8C; };
@@ -104,6 +105,7 @@
 		65908B5EAF790C2C593C528E /* SpectrumAnalyser.h */ /* SpectrumAnalyser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectrumAnalyser.h; path = ../../Source/Components/SpectrumAnalyser.h; sourceTree = SOURCE_ROOT; };
 		68E5E93D816CBFC21BACF850 /* Butterworth.cpp */ /* Butterworth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Butterworth.cpp; path = "../../Source/Digital Filter DSP/Butterworth.cpp"; sourceTree = SOURCE_ROOT; };
 		69FBC058787C1F451476A70E /* ApplianceLnF.h */ /* ApplianceLnF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApplianceLnF.h; path = ../../Source/Components/ApplianceLnF.h; sourceTree = SOURCE_ROOT; };
+		6B88A414B43A1FF1A27D0DB7 /* LinkwitzReilly.cpp */ /* LinkwitzReilly.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LinkwitzReilly.cpp; path = "../../Source/Digital Filter DSP/LinkwitzReilly.cpp"; sourceTree = SOURCE_ROOT; };
 		7ABC4740D86334718E7842D8 /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		7BA25D3D11F19E5C1835133C /* ThermoButton.h */ /* ThermoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ThermoButton.h; path = ../../Source/Components/ThermoButton.h; sourceTree = SOURCE_ROOT; };
 		7D753873AC90EAA5CB19CA54 /* Bessel.h */ /* Bessel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bessel.h; path = "../../Source/Digital Filter DSP/Bessel.h"; sourceTree = SOURCE_ROOT; };
@@ -126,6 +128,7 @@
 		A781756380F0E2D546A46D3F /* include_juce_audio_utils.mm */ /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
 		A9FC696656C24C0E0364D8BA /* EQBoard.h */ /* EQBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EQBoard.h; path = "../../Source/Digital Filter DSP/EQBoard.h"; sourceTree = SOURCE_ROOT; };
 		AB15A4E84FEA58A05E415840 /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		ACAB70E7F6AEE0391B272E6C /* LinkwitzReilly.h */ /* LinkwitzReilly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LinkwitzReilly.h; path = "../../Source/Digital Filter DSP/LinkwitzReilly.h"; sourceTree = SOURCE_ROOT; };
 		ACD9257793F31DBE02495816 /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThermostat.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCC5A6ED219BCA1AA74FF7E /* Standalone Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermostat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B126A0D9B1288F021F339D83 /* include_juce_audio_plugin_client_utils.cpp */ /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_utils.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp; sourceTree = SOURCE_ROOT; };
@@ -291,6 +294,8 @@
 				7D753873AC90EAA5CB19CA54,
 				68E5E93D816CBFC21BACF850,
 				E7B777A22DDDE624C91AF823,
+				6B88A414B43A1FF1A27D0DB7,
+				ACAB70E7F6AEE0391B272E6C,
 			);
 			name = Filters;
 			sourceTree = "<group>";
@@ -637,6 +642,7 @@
 				C0DFE68F075DA7903299ED91,
 				7064523B7426A6473474D2AD,
 				515EB89276C26916A3254DA4,
+				B4D37C3A7205CAA4C7E5578C,
 				CD7ACAD5B24A587D5FD897D5,
 				6720961F81F4BAE8ADEFF77F,
 				58847CFDC0C6E3A4BD8840F2,
