@@ -84,10 +84,16 @@ void EQBoard::prepare(juce::dsp::ProcessSpec spec){
 void EQBoard::process(juce::dsp::AudioBlock<float> samples, const int numSamples){
     
     updateParameters();
-    
-    for (int i = 0 ; i < numEQs ; ++i)
+
+    for (auto eq : eq)
     {
-        eq[i]->process(samples);
+        for (int c = 0; c < samples.getNumChannels(); c++){
+            for (int n = 0; n < numSamples; n++){
+                float x = samples.getSample(c, n);
+                x = eq->processSample(x, c, eq->filterOrder);
+                samples.setSample(c, n, x);
+            }
+        }
     }
 }
 

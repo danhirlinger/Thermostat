@@ -14,8 +14,8 @@
             filePath = "../../Source/Digital Filter DSP/EQ.h"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "EQBoard::setFilterDesign(eqIndex, comboBoxIndex)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -494,8 +494,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -542,8 +542,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -605,8 +605,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -668,8 +668,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -731,8 +731,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -794,8 +794,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
             <Locations>
@@ -857,8 +857,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -873,8 +873,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -889,8 +889,8 @@
             filePath = "../../Source/Digital Filter DSP/EQBoard.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "EQBoard::updateParameters()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1084,6 +1084,22 @@
             startingLineNumber = "125"
             endingLineNumber = "125"
             landmarkName = "Butterworth::updateCoefficients()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "563D093F-1892-4EBC-B72F-0C5DD377FFCC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Source/Digital Filter DSP/EQ.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setFs(newFs)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

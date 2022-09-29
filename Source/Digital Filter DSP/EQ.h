@@ -35,6 +35,9 @@ public:
     
     virtual void process(juce::dsp::AudioBlock<float> samples){}
     
+    virtual double processSample(double x, int c, int o){ return x; };
+
+    
     virtual void setFs(double newFs){
         Fs = newFs;
         Ts = 1./Fs;
